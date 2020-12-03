@@ -1,0 +1,28 @@
+﻿section {
+    margin: 100px;
+    text-align: center;
+}
+
+.shaded {
+    border-style: solid;
+}
+
+div.col-sm-7 {
+    text-align: left;
+    border-style: solid;
+}
+
+nav {
+    text-align: center;
+}
+
+div.col-sm-4 {
+    text-align: left;
+    border-style: solid;
+}
+
+.columns {
+    border-bottom: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
