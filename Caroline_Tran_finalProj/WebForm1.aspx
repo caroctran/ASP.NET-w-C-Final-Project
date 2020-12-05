@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Caroline_Tran_finalProj.WebForm1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-        <h1 class="display-4">This is PAGE ONE</h1>
+        <h1>WELCOME TO HOME PAGE</h1>
     <br />
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla nunc id malesuada finibus. Maecenas leo mi, iaculis ut lorem quis, 

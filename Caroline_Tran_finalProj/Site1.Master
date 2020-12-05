@@ -15,9 +15,17 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body>   
     <form id="form1" runat="server">
         <section id="container">
+             <div> <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+                            <CurrentNodeStyle ForeColor="#333333" />
+                            <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+                            <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+                            <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+                        </asp:SiteMapPath>
+
+     </div>
             <header id="top" class="shaded">
                 <h1>Final Project</h1>
             </header>
@@ -26,17 +34,21 @@
             <div class="columns">
                 <div class="row">
                     <div class="col-sm-6">
-                        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
-                        </asp:Menu>
-                        
-                        
-                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-                        
-                        
-                        <!-- <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder> -->
+                                              
+                        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="BulletedList2" ShowExpandCollapse="False">
+                            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                            <ParentNodeStyle Font-Bold="False" />
+                            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                        </asp:TreeView>
+                   <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />                   
+                    
                     </div>
                     <div class="col-sm-5 offset-sm-1">
-                        <h1>Information <small>Content in this box, the footer, header, and date/time is universal for all pages</small></h1>
+                             <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder> 
+                           <asp:ContentPlaceHolder ID="Form" runat="server"></asp:ContentPlaceHolder> 
+                          <asp:ContentPlaceHolder ID="Games" runat="server"></asp:ContentPlaceHolder> 
+
                     </div>
                 </div>
             </div>
